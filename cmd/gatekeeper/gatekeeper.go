@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nstapelbroek/gatekeeper/app"
+	"github.com/xleonardov/cloud-secure-keeper/app"
 	"github.com/spf13/viper"
 )
 

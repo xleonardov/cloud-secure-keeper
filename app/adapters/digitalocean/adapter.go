@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/digitalocean/godo"
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 	"golang.org/x/oauth2"
 )
 

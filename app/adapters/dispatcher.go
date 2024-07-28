@@ -4,7 +4,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 	"go.uber.org/zap"
 )
 

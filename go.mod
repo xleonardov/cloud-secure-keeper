@@ -1,4 +1,4 @@
-module github.com/nstapelbroek/gatekeeper
+module github.com/xleonardov/cloud-secure-keeper
 
 go 1.19
 

@@ -2,7 +2,7 @@ package vultr
 
 import (
 	"github.com/JamesClonk/vultr/lib"
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 )
 
 // Adapter is a Vultr API implementation of the domain.Adapter interface

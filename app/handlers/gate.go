@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nstapelbroek/gatekeeper/app/adapters"
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 	"go.uber.org/zap"
 )
 

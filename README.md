@@ -1,10 +1,7 @@
-# Gatekeeper
+# Cloud Keeper <i>by [LeonV](https://github.com/xleonardov)</i>
 
-[![Build Status](https://api.cirrus-ci.com/github/nstapelbroek/gatekeeper.svg)](https://cirrus-ci.com/github/nstapelbroek/gatekeeper)
-[![Go Report Card](https://goreportcard.com/badge/github.com/nstapelbroek/gatekeeper)](https://goreportcard.com/report/github.com/nstapelbroek/gatekeeper)
-[![GitHub license](https://img.shields.io/github/license/nstapelbroek/gatekeeper.svg)](https://github.com/nstapelbroek/gatekeeper/blob/master/LICENSE)
+Temporary allow access to your cloud infrastructure by signaling the cloud-keeper. Allowing your build pipeline to deploy behind a firewall.
 
-Temporary allow access to your cloud infrastructure by signaling the gatekeeper. Allowing your build pipeline to deploy behind a firewall.
 
 ## Supported environments
 
@@ -24,17 +21,17 @@ Temporary allow access to your cloud infrastructure by signaling the gatekeeper.
 
 Docker:
 ```
-docker run -p 8080:8080 -e DIGITALOCEAN_PERSONAL_ACCESS_TOKEN=REPLACE_ME -e DIGITALOCEAN_FIREWALL_ID=REPLACE_ME nstapelbroek/gatekeeper:latest
+docker run -p 8080:8080 -e DIGITALOCEAN_PERSONAL_ACCESS_TOKEN=REPLACE_ME -e DIGITALOCEAN_FIREWALL_ID=REPLACE_ME xleonardov/cloud-secure-keeper:latest
 ```
 
 Standalone binary:
 ```
-DIGITALOCEAN_PERSONAL_ACCESS_TOKEN=REPLACE_ME DIGITALOCEAN_FIREWALL_ID=REPLACE_ME ./gatekeeper
+DIGITALOCEAN_PERSONAL_ACCESS_TOKEN=REPLACE_ME DIGITALOCEAN_FIREWALL_ID=REPLACE_ME ./cloud-keeper
 ```
 
 ### Usage
 After installing and running the application you can fire an HTTP POST towards it to temporary whitelist your given IP at the cloud provider.
-By default the gatekeeper will open TCP port 22 (for SSH). You can change the port of protocol in the [configuration](#configuration).
+By default the cloud-keeper will open TCP port 22 (for SSH). You can change the port of protocol in the [configuration](#configuration).
 
 A simple example:
 ```bash
@@ -62,9 +59,9 @@ Although this tool is meant to be very simple, you can configure it to your need
 
 
 ### Development
-If you wish to help building gatekeeper you can start with:
+If you wish to help building cloud-keeper you can start with:
 
-1. [Fork and clone the repository](https://github.com/nstapelbroek/gatekeeper/fork)
+1. [Fork and clone the repository](https://github.com/xleonardov/cloud-secure-keeper/fork)
 1. Install dependencies with `go mod tidy`
 1. Optionally you can install additional tooling like [golangci-lint](https://github.com/golangci/golangci-lint)
-1. Start building! You can find some inspiration for changes in the [issues](https://github.com/nstapelbroek/gatekeeper/issue) or [project board](https://github.com/nstapelbroek/gatekeeper/projects)
+1. Start building! You can find some inspiration for changes in the [issues](https://github.com/xleonardov/cloud-secure-keeper/issue) or [project board](https://github.com/xleonardov/cloud-secure-keeper/projects)

@@ -6,15 +6,15 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/nstapelbroek/gatekeeper/app/adapters"
-	"github.com/nstapelbroek/gatekeeper/app/handlers"
-	"github.com/nstapelbroek/gatekeeper/app/middlewares"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters"
+	"github.com/xleonardov/cloud-secure-keeper/app/handlers"
+	"github.com/xleonardov/cloud-secure-keeper/app/middlewares"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
 
-// App is a struct holding references to every gatekeeper component
+// App is a struct holding references to every cloud-keeper component
 type App struct {
 	router            *gin.Engine
 	config            *viper.Viper
@@ -99,7 +99,7 @@ func bootRoutes(a *App) {
 // Run will start the HTTP server of the app instance
 func (a App) Run() (err error) {
 	port := a.config.GetInt("http_port")
-	a.logger.Info("Starting gatekeeper", zap.Int("port", port))
+	a.logger.Info("Starting cloud-keeper", zap.Int("port", port))
 	err = a.router.Run(fmt.Sprintf("0.0.0.0:%d", port))
 	if err != nil {
 		log.Println(err.Error())

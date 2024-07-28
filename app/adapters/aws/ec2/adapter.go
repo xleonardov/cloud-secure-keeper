@@ -6,7 +6,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/ec2"
 	"github.com/aws/aws-sdk-go-v2/service/ec2/types"
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 )
 
 // Adapter is a AWS EC2 Security Groups API implementation of the domain.Adapter interface

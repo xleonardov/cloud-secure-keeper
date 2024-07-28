@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 )
 
 func getRules() []domain.Rule {

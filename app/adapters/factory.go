@@ -3,12 +3,12 @@ package adapters
 import (
 	"errors"
 
-	"github.com/nstapelbroek/gatekeeper/app/adapters/aws"
-	"github.com/nstapelbroek/gatekeeper/app/adapters/aws/ec2"
-	"github.com/nstapelbroek/gatekeeper/app/adapters/aws/vpc"
-	"github.com/nstapelbroek/gatekeeper/app/adapters/digitalocean"
-	"github.com/nstapelbroek/gatekeeper/app/adapters/vultr"
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters/aws"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters/aws/ec2"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters/aws/vpc"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters/digitalocean"
+	"github.com/xleonardov/cloud-secure-keeper/app/adapters/vultr"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 	"github.com/spf13/viper"
 )
 

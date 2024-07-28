@@ -18,7 +18,7 @@ func NewAWSClient(accessKey string, secretKey string, awsRegion string) *ec2.Cli
 			Value: aws.Credentials{
 				AccessKeyID:     accessKey,
 				SecretAccessKey: secretKey,
-				Source:          "gatekeeper-configuration-arguments",
+				Source:          "cloud-keeper-configuration-arguments",
 			},
 		}),
 	)

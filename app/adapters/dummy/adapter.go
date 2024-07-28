@@ -1,7 +1,7 @@
 package dummy
 
 import (
-	"github.com/nstapelbroek/gatekeeper/domain"
+	"github.com/xleonardov/cloud-secure-keeper/domain"
 )
 
 type adapter struct{}
