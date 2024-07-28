@@ -21,6 +21,7 @@ type App struct {
 	adapterFactory    *adapters.AdapterFactory
 	adapterDispatcher *adapters.AdapterDispatcher
 	logger            *zap.Logger
+	checkable					*zapCheckable
 	// register       *domain.Register
 }
 
